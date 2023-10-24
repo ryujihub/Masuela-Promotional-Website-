@@ -24,53 +24,35 @@ header {
     font-family: Cursive, Brush Script MT;
 }
 
-
-
-#container1 {
+#container {
   text-align: center;
   padding: 5px;
 }
-.promo-item1 {
+.promo-item {
     float: left;
     width: 30%;
     padding: 10px;
     
 }
 
-.promo-item1 img {
+.promo-item img {
     
     height: 100px;
     width: 100px;
 }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-#container2 {
+.p1descript {
   text-align: center;
-  padding: 5px;
 }
-.promo-item2 {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    
+#descript {
+  margin-bottom: 0px;
 }
-
-.promo-item2 img {
-    padding: 0px;
-    height: 90px;
-    width: 90px;
-}
-.row::after {
+.row::after{
     content: "";
     display: table;
     clear: both;
 }
+
 
 #cta {
     
