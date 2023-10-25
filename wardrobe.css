@@ -17,7 +17,7 @@ body {
 header {
   color: black;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   padding: 20px;
   font-family: Cursive, Brush Script MT;
 }
@@ -68,10 +68,16 @@ header {
 }
 
 footer {
-  background-color: #333;
-  color: #FFF;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .promo-item{
+    flex-direction: column; /* Stack images vertically for small screens */
+  }
+}
+  
