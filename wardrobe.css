@@ -1,85 +1,77 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('background.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 header {
-    color: black;
-    text-align: center;
-    font-size: 50px;
-    padding: 20px;
-    font-family: Cursive, Brush Script MT;
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  font-family: Cursive, Brush Script MT;
 }
 
-#container {
+#row1, #row2{
   text-align: center;
   padding: 5px;
 }
+
 .promo-item {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    
+  width: 30%; 
+  padding: 10px;
 }
 
+
 .promo-item img {
-    
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+#descript {
+  margin-bottom: 0px;
 }
 
 .p1descript {
   text-align: center;
 }
-#descript {
-  margin-bottom: 0px;
-}
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
 
+.row {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: row; /* Ensure content aligns in a row */
+  justify-content: space-around; /* Add spacing between items */
+}
 
 #cta {
-    
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .cta-button {
-    background-color: #333;
-    color: #FFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    cursor: pointer;
+  background-color: #333;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 footer {
-    background-color: #333;
-    color: #FFF;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-}
-@media (max-width: 768px) {
-  .image-container {
-    flex-direction: column; /* Stack images vertically for small screens */
-  }
+  background-color: #333;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
 }
